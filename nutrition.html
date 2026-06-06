@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Nutrition</title>
+
+    </head>
+
+    <body>
+
+        <h1>Nutrition Tracker</h1>
+
+        <input type="text" id="food_name" placeholder="Food Name">
+        <input type="text" id="meal_type" placeholder="Meal Type">
+        <input type="timestamptz" id="meal_date" placeholder="Meal Date & Time">
+        <input type="text" id="quantity" placeholder="Quantity">
+        <input type="text" id="unit" placeholder="Unit">
+        <input type="number" id="calories" placeholder="calories">
+        <input type="number" id="protein" placeholder="Protein">
+        <input type="number" id="carbs" placeholder="Carbs">
+        <input type="number" id="fat" placeholder="Fats">
+        <input type="number" id="sugar" placeholder="Sugars">
+        <input type="text" id="note" placeholder="Any Extra Note?">
+
+        <button onclick="savefood()">
+            Save Log
+        </button>
+
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="js/nutrition.js"></script>
+
+
+    </body>
+
+</html>
