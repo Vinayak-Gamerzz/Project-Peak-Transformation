@@ -4,7 +4,12 @@
 
     <head>
 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Nutrition</title>
+
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 
@@ -13,25 +18,44 @@
         <h1>Nutrition Tracker</h1>
 
         <input type="text" id="food_name" placeholder="Food Name">
-        <input type="text" id="meal_type" placeholder="Meal Type">
-        <input type="timestamptz" id="meal_date" placeholder="Meal Date & Time">
-        <input type="text" id="quantity" placeholder="Quantity">
-        <input type="text" id="unit" placeholder="Unit">
-        <input type="number" id="calories" placeholder="calories">
+
+        <select id="mealtype">
+
+                <option>Breakfast</option>
+
+                <option>Lunch</option>
+
+                <option>Dinner</option>
+
+                <option>Snack</option>
+
+        </select>
+
+        <input type="time" id="mealtime" placeholder="Meal Time">
+
+        <input type="number" id="quantity" placeholder="Quantity">
+
+        <input type="text" id="unit" placeholder="Unit (g/ml/piece/bowl)">
+
+        <input type="number" id="calorie" placeholder="calories">
+
         <input type="number" id="protein" placeholder="Protein">
-        <input type="number" id="carbs" placeholder="Carbs">
+
+        <input type="number" id="carb" placeholder="Carbs">
+
         <input type="number" id="fat" placeholder="Fats">
+
         <input type="number" id="sugar" placeholder="Sugars">
+
         <input type="text" id="note" placeholder="Any Extra Note?">
 
         <button onclick="savefood()">
             Save Log
         </button>
 
-        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-        <script src="js/nutrition.js"></script>
+        <script type="module" src="js/nutrition.js"></script>
 
 
     </body>
-
+    
 </html>
